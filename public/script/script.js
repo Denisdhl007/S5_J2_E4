@@ -1,4 +1,5 @@
 
+
 let jour = prompt(`Quel jour?`);
 console.log(jour);
 switch (jour){
@@ -11,6 +12,8 @@ switch (jour){
   default:
     alert(`Sorry, ${jour} n'est pas un jour reconnu`);
 }
+
+
 
 let meteo = prompt(`Quel meteo? Soleil? Pluie? Neige?`);
 console.log(meteo);
@@ -29,9 +32,10 @@ switch (meteo){
 }
 
 
+
 let nbr1 = prompt(`un chiffre`)
 console.log(nbr1);
-let operateur = prompt(`Quel opérateur`)
+let operateur = prompt(`Quel opérateur?`)
 console.log(operateur);
 let nbr2 = prompt(`un chiffre`)
 console.log(nbr2);
@@ -53,4 +57,6 @@ switch(operateur){
     result = parseInt(nbr1) / parseInt(nbr2);
     alert(`${nbr1} / ${nbr2} = ${result}`);
     break;
+  default:
+    alert(`Sorry, ${nbr1}, ${nbr2}, ${operateur} n'est pas un nombre ou operateur reconnu`);
 }
